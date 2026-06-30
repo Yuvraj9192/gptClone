@@ -1,0 +1,121 @@
+.chatWindow {
+    background: #212121;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span {
+    margin: 1rem 2rem;
+}
+
+.userIconDiv {
+    margin: 1rem 2rem;
+}
+
+.userIcon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.chatInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBox {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 14px;
+    font-size: .9rem;
+    background: rgba(255, 255, 255, .05);
+}
+
+input:focus {
+    outline: none;
+}
+
+#submit {
+    position: absolute;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#submit i:hover {
+    color: #999696;
+}
+
+.infoBox {
+    font-size: .8rem;
+    padding: .5rem;
+    color: #b4b4b4;
+}
+
+/* ================= Tablet ================= */
+
+@media(max-width:1024px) {
+
+    .navbar span,
+    .userIconDiv {
+        margin: 1rem;
+    }
+
+    .inputBox {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .navbar span {
+        font-size: 17px;
+    }
+
+    .inputBox {
+        width: 95%;
+    }
+
+    input {
+        font-size: 15px;
+        padding: 14px;
+    }
+
+    .infoBox {
+        width: 95%;
+        font-size: 13px;
+    }
+
+}
