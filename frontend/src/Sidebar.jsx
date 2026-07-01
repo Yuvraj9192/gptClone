@@ -39,7 +39,7 @@ function Sidebar() {
         setCurrThreadId(newThreadId);
         
         try {
-            const response = await fetch(`http://localhost:8000/api/thread/${newThreadId}`);
+            const response = await fetch(`https://gptclone-97k7.onrender.com/api/thread/${newThreadId}`);
 
             if (!response.ok) {
                 throw new Error(`Request failed: ${response.status}`);
@@ -58,7 +58,7 @@ function Sidebar() {
 
     const deleteThread = async (threadId) => {
         try {
-            const response = await fetch(`http://localhost:8000/api/thread/${threadId}`, {method: "DELETE"});
+            const response = await fetch(`https://gptclone-97k7.onrender.com/api/thread/${threadId}`, {method: "DELETE"});
             const res = await response.json();
             // console.log(res);
 
