@@ -8,7 +8,7 @@ function Sidebar() {
 
     const getAllThreads = async () => {
         try{
-            const response = await fetch("http://localhost:8000/api/thread");
+            const response = await fetch("https://gptclone-97k7.onrender.com/api/thread");
             const res = await response.json();
             // console.log(res);
             const filterData = res.map(thread => ({
