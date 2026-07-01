@@ -13,6 +13,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use("/api", chatRoute);
 
-app.listen(8000, () => {
+app.listen(process.env.port || 8000, () => {
     console.log("App is listening on port 8000");
 });
